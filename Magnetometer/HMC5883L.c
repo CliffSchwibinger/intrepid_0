@@ -174,7 +174,6 @@ char getMag(unsigned char addr, short int *magnetometer) {
 	   *magnetometer = buff[2*x];
 	   *magnetometer <<= 8;
 	   *magnetometer |= buff[2*x+1];
-	   *magnetometer = *magnetometer * 1000 / 390;
 	   magnetometer++;
    }
 
